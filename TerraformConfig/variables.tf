@@ -7,8 +7,7 @@ variable "Location" {
 variable "Tags" {
   type = map(string)
   description = "Tags for each resource created"
-  default = {
-  }
+  default = {}
 }
 
 variable "RgName" {
@@ -23,11 +22,6 @@ variable "KvNacls" {
     ip_rules                   = list(string)
     virtual_network_subnet_ids = list(string)
   }))
-  default = {}
-}
-
-variable "Tags" {
-  type = map(string)
   default = {}
 }
 
